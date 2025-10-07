@@ -2,12 +2,18 @@
 
 Send clean Discord notifications when you push to `main` or other branches when you publish a new release.
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Zeno-Fluff/DNGA/discord.yml)
+
 ## Features
 - Push notifications with commit message and author
 - Release alerts with tag, name, and link
 - Uses GitHub Secrets to keep your webhook safe
 
-## Setup (if you don't want to clone the repo)
+## Template Setup
+1. press use this template.
+2. add your DISCORD_WEBHOOK secret in your repo settings with your webhook link inside of it.
+
+## Setup (if you don't want to use the template)
 
 1. Create a file named `.github/workflows/discord.yml`
 2. Paste the following code into it (modify as you wish):
