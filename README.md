@@ -11,6 +11,7 @@ Send clean Discord notifications when you push to `main` or other branches when 
 
 1. Create a file named `.github/workflows/discord.yml`
 2. Paste the following code into it (modify as you wish):
+
 name: Discord Notification
 
 on:
