@@ -17,10 +17,9 @@ name: Discord Notification
 on:
   push:
     branches:
-      - main
+      - main   
   release:
-    types: [published]
-
+    types: [published]  
 jobs:
   notify:
     runs-on: ubuntu-latest
@@ -32,9 +31,8 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
             -X POST \
-            -d "{\"content\": \"name here-\n🛠️ New push to *main* by ${{ github.actor }}\n🔗 [View Commit](${{ github.event.head_commit.url }})\n📝 Message: ${{ github.event.head_commit.message }}\"}" \
+            -d "{\"content\": \"OALSVRC-\n🛠️ New push to *main* by ${{ github.actor }}\n🔗 [View Commit](${{ github.event.head_commit.url }})\n📝 Message: ${{ github.event.head_commit.message }}\"}" \
             $DISCORD_WEBHOOK
-
       - name: Send Discord message for release
         if: github.event_name == 'release'
         env:
@@ -42,9 +40,9 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
             -X POST \
-            -d "{\"content\": \"name here-\n🚀 New release published by ${{ github.actor }}\n🏷️ Tag: ${{ github.event.release.tag_name }}\n📝 Name: ${{ github.event.release.name }}\n🔗 [View Release](${{ github.event.release.html_url }})\"}" \
+            -d "{\"content\": \"OALSVRC-\n🚀 New release published by ${{ github.actor }}\n🏷️ Tag: ${{ github.event.release.tag_name }}\n📝 Name: ${{ github.event.release.name }}\n🔗 [View Release](${{ github.event.release.html_url }})\"}" \
             $DISCORD_WEBHOOK
-
+        
 5. create a webhook on your discord server either on the web or desktop app.           
 6. Go to your repo → Settings → Secrets → Actions.
 7. Add a secret named `DISCORD_WEBHOOK` with your Discord webhook URL.
