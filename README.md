@@ -12,6 +12,8 @@ Send clean Discord notifications when you push to `main` or other branches when 
 1. Create a file named `.github/workflows/discord.yml`
 2. Paste the following code into it (modify as you wish):
 
+<pre>
+`yaml
 name: Discord Notification
 
 on:
@@ -42,7 +44,9 @@ jobs:
             -X POST \
             -d "{\"content\": \"OALSVRC-\n🚀 New release published by ${{ github.actor }}\n🏷️ Tag: ${{ github.event.release.tag_name }}\n📝 Name: ${{ github.event.release.name }}\n🔗 [View Release](${{ github.event.release.html_url }})\"}" \
             $DISCORD_WEBHOOK
-        
+</pre>
+
+  
 5. create a webhook on your discord server either on the web or desktop app.           
 6. Go to your repo → Settings → Secrets → Actions.
 7. Add a secret named `DISCORD_WEBHOOK` with your Discord webhook URL.
