@@ -33,7 +33,7 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
             -X POST \
-            -d "{\"content\": \"OALSVRC-\n🛠️ New push to *main* by ${{ github.actor }}\n🔗 [View Commit](${{ github.event.head_commit.url }})\n📝 Message: ${{ github.event.head_commit.message }}\"}" \
+            -d "{\"content\": \"name here-\n🛠️ New push to *main* by ${{ github.actor }}\n🔗 [View Commit](${{ github.event.head_commit.url }})\n📝 Message: ${{ github.event.head_commit.message }}\"}" \
             $DISCORD_WEBHOOK
       - name: Send Discord message for release
         if: github.event_name == 'release'
@@ -42,7 +42,7 @@ jobs:
         run: |
           curl -H "Content-Type: application/json" \
             -X POST \
-            -d "{\"content\": \"OALSVRC-\n🚀 New release published by ${{ github.actor }}\n🏷️ Tag: ${{ github.event.release.tag_name }}\n📝 Name: ${{ github.event.release.name }}\n🔗 [View Release](${{ github.event.release.html_url }})\"}" \
+            -d "{\"content\": \"name here-\n🚀 New release published by ${{ github.actor }}\n🏷️ Tag: ${{ github.event.release.tag_name }}\n📝 Name: ${{ github.event.release.name }}\n🔗 [View Release](${{ github.event.release.html_url }})\"}" \
             $DISCORD_WEBHOOK
 </pre>
 
