@@ -1,4 +1,4 @@
-#DNGA - Discord-Notification-Github-Action.
+# DNGA - Discord-Notification-Github-Action.
 
 Send clean Discord notifications when you push to `main` or other branches when you publish a new release.
 
