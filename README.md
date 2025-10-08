@@ -1,3 +1,5 @@
+<img width="962" height="654" alt="DNGA" src="https://github.com/user-attachments/assets/a4de5b4a-5546-47ef-82f9-d830aadc66ba" />
+
 # DNGA - Discord-Notification-Github-Action.
 
 Send clean Discord notifications when you push to `main` or other branches when you publish a new release.
