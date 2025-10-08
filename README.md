@@ -59,5 +59,6 @@ jobs:
 7. Add a secret named `DISCORD_WEBHOOK` with your Discord webhook URL.
 
 Example of what it should look like when you're done ( minus my logo and repo )
-![DNGA](https://github.com/user-attachments/assets/c64dd2a5-4392-4d92-af9f-a8a514265b51)
+![DNGAdiscordphoto](https://github.com/user-attachments/assets/6de9bbd0-8862-4c49-92f9-d07d8d6600b2)
+
 
