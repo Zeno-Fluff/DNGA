@@ -3,7 +3,6 @@
 Send clean Discord notifications when you push to `main` or other branches when you publish a new release.
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Zeno-Fluff/DNGA/discord.yml)
-
 ## Features
 - Push notifications with commit message and author
 - Release alerts with tag, name, and link
