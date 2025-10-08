@@ -57,4 +57,5 @@ jobs:
 7. Add a secret named `DISCORD_WEBHOOK` with your Discord webhook URL.
 
 Example of what it should look like when you're done ( minus my logo and repo )
-![Gitbot](https://github.com/user-attachments/assets/59c36d8c-4dc7-44cf-9850-24ab46d94617)
+![DNGA](https://github.com/user-attachments/assets/c64dd2a5-4392-4d92-af9f-a8a514265b51)
+
