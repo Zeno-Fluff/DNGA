@@ -1,3 +1,6 @@
+--
+# Warning: this code is AI written, as it is for notifications for other projects, this repo stands as it's faster for others.
+--
 <img width="962" height="654" alt="DNGA" src="https://github.com/user-attachments/assets/a4de5b4a-5546-47ef-82f9-d830aadc66ba" />
 
 # DNGA - Discord-Notification-Github-Action.
